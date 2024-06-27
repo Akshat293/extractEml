@@ -52,5 +52,8 @@ These metrics indicate that the pipeline can process around 6,000 to 6,667 email
 3. **Monitor and Analyze**: Implement monitoring tools to continuously analyze pipeline performance and identify areas for improvement.
 4. **Scale Testing**: Gradually increase the volume of data processed during testing to ensure the system remains robust and performant as data loads grow.
 
+5. Recovery Strategies
+In addition to building the data pipeline, a robust recovery mechanism has been implemented. Using persistent actors, the system keeps track of pending email files. This ensures that if an actor or the JVM crashes, the system can recover and reprocess the pending files without data loss. This enhances the fault tolerance and reliability of the pipeline, ensuring continuous and accurate data processing even in the face of failures.
+
 #### Conclusion
 This project aims to build a robust and scalable reactive data pipeline using the Akka framework, tailored to handle the firm's diverse and voluminous communication data. By achieving the outlined short-term and long-term business goals, the firm will enhance its communication monitoring capabilities and reduce reliance on external vendors, ultimately leading to improved operational efficiency and data-driven decision-making. The initial implementation and testing have shown promising results, setting a strong foundation for future enhancements and scalability.
