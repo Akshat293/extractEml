@@ -1,3 +1,6 @@
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpu-upload-object.html
+
+
 import java.io.File
 import java.nio.file.Paths
 import org.apache.avro.Schema
